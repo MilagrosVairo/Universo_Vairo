@@ -56,6 +56,7 @@ header {
     align-items: center;
     padding: 80px 80px 80px 80px;
     letter-spacing: 10px;
+    animation-duration: 2.5s;
 }
 /* Fin del main */
 
@@ -278,34 +279,41 @@ label {
 }
 
 
-
-
 .limite {
     width: 600px;
     display:block;
     margin:auto;    
     margin-bottom: 80px;
-    background-color: #ebb67d; 
+    transition: height 2s, width 1s;
 }
 
-.image__caption {
-    font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
+.limite:hover {
+  width: 650px;
 }
+
 
 .forma {
     width: 500px;
     display:block;
     margin: auto;
     margin-bottom: 80px;
+    transition: height 2s, width 1s;
 }
-
+.forma:hover {
+  width: 700px;
+   }
 
 .video {
     display:block;
     margin:auto;
-    margin-bottom: 80px;    
+    margin-bottom: 80px;  
+    transition: height 1.5s, width 1.5s;  
 }
+
+.video:hover {
+  width: 800px;
+  height: 400px;
+   } 
 
 
 
