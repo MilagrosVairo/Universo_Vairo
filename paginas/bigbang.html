@@ -1,67 +1,110 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    
+    <!-- Animaciones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/c15cb0b06c.js" crossorigin="anonymous"></script>
-    <title>Cosmos</title>
+    <!-- CSS -->   
+    <link rel="stylesheet" href="../css/style.css">
+   
+      <title>Cosmos</title>
 </head>
+
 <body class="bodyBigbang">
 
 
+
 <!-- Comienzo del header --> 
-    <header class="pageTop">
-        <nav>
-            <ul class="menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="bigbang.html"> Big Bang </a></li> 
-                <li><a href="limite.html"> Su límite</a></li>        
-                <li><a href="forma.html">Su forma</a></li> 
-                <li><a href="contactos.html">Contáctanos</a></li> 
-            </ul>  
-        </nav>        
-    </header>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Cosmos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    <a class="nav-link" href="bigbang.html">Big Bang</a>
+                    <a class="nav-link" href="forma.html">Formas</a>
+                    <a class="nav-link" href="limite.html">Límites</a>
+                    <a class="nav-link" href="contactos.html">Contáctanos</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header> 
+
+
+<!-- Comienzo del main -->
+<main>
+    <h1 class="title__1">La teoría del Big Bang</h1>
+    <div class="linea"></div>
+</main>
 
 
 <!-- Comienzo del section -->
-<section class="sectionTeoria">
-    <h1 class="title__1">LA TEORÍA DEL BIG BANG</h1>
-
-    <article>
-        <p>El mejor modo de explicar las propiedades observables del universo, tales como su expansión, el tipo de elementos químicos que contiene o la presencia de galaxias y otras estructuras a gran escala, es suponer universo se originó al liberarse que súbitamente la energía contenida en un único punto inicial o singularidad. La teoría del Big Bang o del «gran estallido», así llamada en referencia a esa eclosión energética original, ofrece una descripción de las fases por las que atravesó el universo hasta la creación de las primeras estructuras complejas. </p>
+<section class="sectionTeoria container">
+    <article class="row">
+        <p class=".col-8"> El mejor modo de explicar las propiedades observables del universo, tales como su expansión, el tipo de elementos químicos que contiene o la presencia de galaxias y otras estructuras a gran escala, es suponer universo se originó al liberarse que súbitamente la energía contenida en un único punto inicial o singularidad. La teoría del Big Bang o del «gran estallido», así llamada en referencia a esa eclosión energética original, ofrece una descripción de las fases por las que atravesó el universo hasta la creación de las primeras estructuras complejas. </p>
     </article>
-    
-    <article>
-        <p class="subtitle">Los pilares del Big Bang </p>
-        <p>La teoría del Big Bang se apoya en dos grandes pilares.  Por un lado, la universalidad de las leyes físicas, es decir, las leyes de la naturaleza son las mismas en cualquier lugar del universo y en cualquier instante temporal.  La teoría de la relatividad de Einstein es una de las mejores demostraciones de ello.  Por otro lado, tenemos el llamado «principio cosmológico», que plantea que el universo es homogéneo e isótropo.  Esto significa que, visto desde cualquier lugar por cualquier observador, en una escala lo suficientemente grande, el universo es el mismo y presenta las mismas propiedades físicas independientemente de donde nos encontramos. </p>
+        <br>
+    <article class="row">
+        <p class="subtitle .col-8">Los pilares del Big Bang </p>
+        <p class=".col-8">La teoría del Big Bang se apoya en dos grandes pilares.  Por un lado, la universalidad de las leyes físicas, es decir, las leyes de la naturaleza son las mismas en cualquier lugar del universo y en cualquier instante temporal.  La teoría de la relatividad de Einstein es una de las mejores demostraciones de ello.  Por otro lado, tenemos el llamado «principio cosmológico», que plantea que el universo es homogéneo e isótropo.  Esto significa que, visto desde cualquier lugar por cualquier observador, en una escala lo suficientemente grande, el universo es el mismo y presenta las mismas propiedades físicas independientemente de donde nos encontramos. </p>
     </article>
-
-    <iframe class="video" width="500" height="300" src="https://www.youtube.com/embed/wNDGgL73ihY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="video embed-responsive-item"  src="https://www.youtube.com/embed/wNDGgL73ihY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
 </section>
 
 
-<!-- Comienzo del footer --> 
-<footer class="pageBottom">
-    <ul class="footer">
-        <li><a href="https://www.facebook.com" target="_blank" alt="Logo de Facebook" class="facebook">
-            <i class="fab fa-facebook-f"></i>
-        </a></li>            
-        
-        <li><a href="https://www.twitter.com" target="_blank" alt="Logo de Twitter" class="twitter">
-            <i class="fab fa-twitter"></i>
-        </a></li>
 
-        <li><a href="https://www.instagram.com" target="_blank" alt="Logo de Instagram" class="instagram">  
-            <i class="fab fa-instagram"></i>
-        </a></li>
-        
-        <li><a href="https://www.youtube.com" target="_blank" alt="Logo de YouTube" class="youtube">
-            <i class="fab fa-youtube"></i>
-        </a></li>
-    </ul>
-</footer>
+    <!-- Comienzo del footer -->
+    <footer class="pageBottom">
+        <ul class="footer">
+            <li><a href="https://www.facebook.com" target="_blank" alt="Logo de Facebook" class="facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a></li>
+
+            <li><a href="https://www.twitter.com" target="_blank" alt="Logo de Twitter" class="twitter">
+                    <i class="fab fa-twitter"></i>
+                </a></li>
+
+            <li><a href="https://www.instagram.com" target="_blank" alt="Logo de Instagram" class="instagram">
+                    <i class="fab fa-instagram"></i>
+                </a></li>
+
+            <li><a href="https://www.youtube.com" target="_blank" alt="Logo de YouTube" class="youtube">
+                    <i class="fab fa-youtube"></i>
+                </a></li>
+        </ul>
+    </footer>
+    
+<!-- Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+
+<!-- Animaciones -->
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 
 </body>
+
 </html>
