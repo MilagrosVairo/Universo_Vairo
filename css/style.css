@@ -6,59 +6,39 @@
 
 
 /* Comienzo del header */
-header {
-    width: 100%;
-    height: 30px;
-    background-color: #000;
-
-}
 
 .menu {
     list-style: none;
-    text-align: center;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    display: flex; 
-    flex-direction: row;
-    justify-content: center;
 }
 
-
-.menu li a {
-    color: white;
-    text-decoration: none;
-    padding: 0px 30px 0px 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-}
-
-
-/* Fin del header */
 
 
 
 /* Comienzo del main */
-.background__image {
-   background-image: url("../imagenes/universo.jpg");
-   background-position: center;
-   background-size: cover;
-}
+
 
 .title { 
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-weight:bolder;
-    line-height: 90px;
-    font-size: 85px;
-    color: white;
-    margin-left: 100px;
-    margin-right: 100px;
-    align-items: center;
+    font-size: 50px;
     padding: 80px 80px 80px 80px;
     letter-spacing: 10px;
-    animation-duration: 2.5s;
+    animation-duration: 3s;
 }
-/* Fin del main */
+
+.title__1, .title__2, .title__3{
+   
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.linea {
+  border-top: .5px solid black;
+  height: 20px;
+  max-width: 500px;
+  padding: 0;
+  margin: 20px auto 0 auto;
+}
 
 
 
@@ -67,26 +47,42 @@ header {
 
 
 .articulo__1 ,p {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 30px;
-    margin: 37px;
+    padding-top: 20px;
+    line-height: 35px;
 }
 
 
 .texto {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    line-height: 20px;
-}
-
-.title__2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    font-weight: bolder;
+    line-height: 25px;
 }
 
 
+.subtitle {
+    font-size: 18px;
+    color: black;
+    font-weight:550;
+}
 
+.card-img-top {
+  background-size: cover;
+  background-position: center;
+}
+
+.card-group {
+  margin: 60px 25px 45px 25px;
+}
+
+.card-text {
+  font-size: 14px;
+}
+
+.card-title {
+  font-size: 17px;
+}
+
+
+/*
 .articulos  {
     width: 100%;
     height: 400px;
@@ -126,7 +122,7 @@ header {
  a:link, a:visited {
     text-decoration: none;
   }
-
+*/
 
 /* Fin del section */
 
@@ -136,17 +132,11 @@ header {
 /* Comienzo del footer */
 footer {
     width: 100%;
-    height: 25px;
+    height: 30px;
     background-color: #000;  
     bottom: 0px;
     list-style: none;
     text-align: center;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    display: flex; 
-    flex-direction: row;
-    justify-content: space-evenly;
-
 }
 
 .footer li {
@@ -156,9 +146,9 @@ footer {
 .footer li a {
     color: white;
     text-decoration: none;
-    padding: 0px 30px 0px 40px;
+    padding: 0px 15px 0px 15px;
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .facebook:hover {
@@ -177,45 +167,36 @@ footer {
     color: #c4302b;
 }
 
-/* Fin del footer */
 
 
 
+/* Contactos */
 
-
-
-
-/*  CONTACTOS  */
 .contact__form {
-  width: 550px; 
   height: auto;
-  margin: 80px auto;
-  border-radius: 10px;  
-  padding-top: 30px;
-  padding-bottom: 30px;  
+  padding-top: 20px;
+  padding-bottom: 60px;  
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   }
   
 
 .contact {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
     font-size: 25px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 30px;
+    
 }
 
 .title__3 {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
     font-size: 15px;
 }
 
-
-
 label {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    padding-left: 110px;
 }
 
 .text, .email {
@@ -224,96 +205,57 @@ label {
     height: 30px; 
     border-radius: 5px;   
     border-width: 1px; 
-    border-color: solid 3px #682C0E; 
     margin-top: 10px;  
     margin-bottom: 20px; 
-    margin-left: 110px; 
-    padding-left: 10px;
   }
 
 .message {
-    width: 309px; 
+    width: 300px; 
     height: 80px; 
     background-color: #fbfbfb;
     border-radius: 5px;  
     border-width: 1px; 
-    border-color: solid 3px #682C0E; 
     margin-top: 10px;  
     margin-bottom: 20px; 
-    margin-left: 110px; 
 }
   
 .button {
     height: 35px; 
-    width: 312px; 
-    border-radius: 5px;  
-    border-color: solid 3px #682C0E;
-    margin-left: 110px;   
+    width: 300px;  
 }
 
-label {
-    display: block; 
-    float: center;  
-    border: center;
-  }
-/*  FIN CONTACTOS  */
-
-
-
-
-
-.title__1 {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    line-height: 90px;
-    font-size: 30px;
-    color: black;
-    margin-top: 30px;
-}
-
-.subtitle {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 21px;
-    color: black;
-    font-weight: bolder;
+::placeholder {
+  font-weight: 100;
+  font-size: 14px;
 }
 
 
-.limite {
-    width: 600px;
+
+/* imagenes-videos */
+
+.limite, .formas {
+    width: 400px;
     display:block;
     margin:auto;    
     margin-bottom: 80px;
+    margin-top: 35px;
     transition: height 2s, width 1s;
+
 }
 
-.limite:hover {
-  width: 650px;
+.limite:hover, .formas:hover {
+  width: 550px;
 }
 
-
-.forma {
-    width: 500px;
-    display:block;
-    margin: auto;
-    margin-bottom: 80px;
-    transition: height 2s, width 1s;
-}
-.forma:hover {
-  width: 700px;
-   }
 
 .video {
     display:block;
     margin:auto;
-    margin-bottom: 80px;  
-    transition: height 1.5s, width 1.5s;  
+    margin-bottom: 80px; 
+    margin-top: 40px; 
+    background-size: contain;
 }
 
-.video:hover {
-  width: 800px;
-  height: 400px;
-   } 
 
 
 
@@ -321,6 +263,7 @@ label {
 
 /* APLICANDO GRID */
 /* Index */
+/*
 .bodyIndex{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -355,11 +298,11 @@ label {
   .pageBottom {
       grid-area: pie;
   }
+*/
 
 
 
-
-/* Contactos */
+/* Contactos
   .bodyContact{
     display: grid;
     grid-template-areas: 
@@ -376,11 +319,11 @@ label {
 .contact__form {
     grid-area: cuerpo;
 }
+ */
 
 
 
-
-/* Forma */
+/* Forma 
 .bodyForma{
     display: grid;
     grid-template-areas: 
@@ -397,11 +340,11 @@ label {
 .sectionFroma {
     grid-area: cuerpo;
 }
+*/
 
 
 
-
-/* Limite */
+/* Limite
 .bodyLimite{
     display: grid;
     grid-template-areas: 
@@ -421,12 +364,12 @@ label {
 
 .limite {
     grid-area: imagen;
-}
+} */
 
 
 
 
-/* BigBang */
+/* BigBang 
 .bodyBigbang{
     display: grid;
     grid-template-areas: 
@@ -446,11 +389,11 @@ label {
 
 .video {
     grid-area: video;
-}
+}*/
 
 
 
-/* Vista en celular */
+/* Vista en celular 
 
 
 @media only screen and (max-width:600px){
@@ -561,15 +504,14 @@ label {
 
  }
 
+*/
 
 
-
-/* Vista en tablet */
+/* Vista en tablet 
 
 @media only screen and (max-width:768px) {
 
 
-    
 
      .title {
         font-family: Arial, Helvetica, sans-serif;
@@ -618,7 +560,7 @@ margin-left: 400px;
 width: 70px;
 height: 18px;
 }
- }
+ }*/
 
 
 
