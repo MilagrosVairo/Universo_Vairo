@@ -10,10 +10,6 @@ html {
 
 
 /* Comienzo del header */
-.menu {
-    list-style: none;
-}
-
 .menubar {
   background-color: rgba(122, 113, 151, 0.185);
  }
@@ -199,10 +195,6 @@ ul li a {
 .texto {
   font-size: 1.2rem;
   padding-bottom: 20px;
-}
-
-label {
-    font-size: 1.2rem;
 }
 
 .text, .email {

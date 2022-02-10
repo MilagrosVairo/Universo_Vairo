@@ -1,0 +1,102 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+/* Footer */
+footer {
+  width: 100%;
+  height: 30px;
+  background-color: #000;
+  bottom: 0px;
+  padding: 0%;
+  list-style: none;
+  text-align: center; }
+  footer ul li {
+    display: inline; }
+    footer ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 0px 15px 0px 15px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1rem; }
+
+/* Iconos */
+.facebook:hover {
+  color: #3b5998; }
+
+.twitter:hover {
+  color: #00acee; }
+
+.instagram:hover {
+  color: #b95279; }
+
+.youtube:hover {
+  color: #c4302b; }
+
+/* Menú */
+.menubar {
+  background-color: rgba(122, 113, 151, 0.185); }
+  .menubar .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+/* Adaptación desktop */
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: flex-end;
+    flex-direction: row; } }
+
+/* Contactos */
+.contacto {
+  height: auto;
+  padding-top: 75px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  /* Adaptación mobile */ }
+  .contacto .contacto__formulario {
+    font-size: 1.8rem;
+    line-height: 50px; }
+  .contacto .texto {
+    font-size: 1.2rem;
+    padding-bottom: 20px; }
+  .contacto .text, .contacto .email {
+    background-color: #fbfbfb;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border-width: 1px;
+    margin-top: 10px;
+    margin-bottom: 20px; }
+    .contacto .text ::placeholder, .contacto .email ::placeholder {
+      font-weight: 100;
+      font-size: .9rem; }
+  .contacto .message {
+    width: 300px;
+    height: 80px;
+    background-color: #fbfbfb;
+    border-radius: 5px;
+    border-width: 1px;
+    margin-top: 10px;
+    margin-bottom: 20px; }
+    .contacto .message ::placeholder {
+      font-weight: 100;
+      font-size: .9rem; }
+  .contacto .button {
+    height: 35px;
+    width: 300px; }
+  @media screen and (max-width: 400px) {
+    .contacto .contacto__formulario, .contacto .texto {
+      font-size: .9rem;
+      line-height: 25px; }
+      .contacto .contacto__formulario .text, .contacto .contacto__formulario .email, .contacto .contacto__formulario .button, .contacto .contacto__formulario .message, .contacto .texto .text, .contacto .texto .email, .contacto .texto .button, .contacto .texto .message {
+        width: 250px; }
+    .contacto ::placeholder {
+      font-size: .7rem; } }
