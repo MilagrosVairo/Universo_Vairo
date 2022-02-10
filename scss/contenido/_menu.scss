@@ -1,14 +1,14 @@
 /* Menú */
 .menubar {
     background-color: rgba(122, 113, 151, 0.185);  
-    
-    & .navbar-nav {
+}
+
+.navbar-nav {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-}
-
+  
 /* Adaptación desktop */  
   @media (min-width: $medium) 
   {
