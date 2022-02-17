@@ -1,4 +1,28 @@
-$colorPrincipal: #000;
-$colorSecundario: #fbfbfb;
-$small: 400px;
-$medium: 992px;
+/* Mapas */
+$colores: (
+    primario: #000,
+    secundario: #fbfbfb,
+    terciario: white,
+    bg: rgba(122, 113, 151, 0.185),
+);
+
+/*Extends*/
+%flexRow {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+};
+
+
+/*Mixins*/
+@mixin mediaQuery ($diseñoPantalla) {
+    @if $diseñoPantalla == mobile {
+        @media only screen and (max-width: 400px) {
+            @content;
+        } 
+    } @else if $diseñoPantalla == medio {
+        @media only screen and (max-width: 992px) {
+            @content;
+        } 
+    }
+};

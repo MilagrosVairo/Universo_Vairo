@@ -1,6 +1,6 @@
 /* Menú */
 .menubar {
-    background-color: rgba(122, 113, 151, 0.185);  
+    background-color: map-get($colores, bg );  
 }
 
 .navbar-nav {
@@ -10,7 +10,7 @@
   }
   
 /* Adaptación desktop */  
-  @media (min-width: $medium) 
+  @include mediaQuery (medio)
   {
     .navbar-expand-lg .navbar-collapse {
       display: flex!important;
