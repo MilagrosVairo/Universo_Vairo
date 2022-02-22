@@ -1,9 +1,21 @@
+/* Tamaños */
+$small: 480px;
+$intermedio: 620px;
+$tablet: 768px; 
+
 /* Mapas */
 $colores: (
     primario: #000,
     secundario: #fbfbfb,
     terciario: white,
-    bg: rgba(122, 113, 151, 0.185),
+    bg: #fbfafa,
+    button_bg: #dbdce4,
+    button_border: #cbccda,
+);
+
+$tipografias: (
+    primaria:'EB Garamond' serif,
+    secundaria: 'Russo One' sans-serif,
 );
 
 /*Extends*/

@@ -1,0 +1,30 @@
+/* imagenes y video */
+.limite,
+.formas {
+  width: 500px;
+  display: block;
+  margin: auto;
+  padding-bottom: 150px;
+  margin-top: 35px;
+  transition: transform;
+}
+
+.limite:hover,
+.formas:hover {
+  transform: scale(1.2);
+}
+
+.video {
+  display: block;
+  margin: auto;
+  margin: 40px 80px 0px 80px;
+  background-size: contain;
+  padding-bottom: 7rem;
+}
+
+.img__bigbang {
+  width: 500px;
+  display: block;
+  margin: auto;
+  padding-bottom: 30px;
+}

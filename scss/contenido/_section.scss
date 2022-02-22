@@ -1,0 +1,112 @@
+.titulos {
+  font-family: map-get($tipografias, primaria);
+  text-align: center;
+  font-size: 2.5rem;
+  color: map-get($colores, primario);
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.linea {
+  border-top: .5px solid map-get($colores, primario);
+  height: 40px;
+  max-width: 550px;
+  padding: 0;
+  margin: 20px auto 0px auto;
+}
+
+.seccion,
+p {
+  font-family: map-get($tipografias, primaria);
+  padding-top: 10px;
+  line-height: 35px;
+
+  .container {
+    padding-left: 60px;
+    padding-right: 60px;
+
+    p {
+      font-size: 1rem;
+      padding-bottom: 20px;
+    }
+
+    .seccion__subtitulo {
+      font-family: map-get($tipografias, primaria);
+      margin-top: 35px;
+      font-size: 1.5rem;
+      color: map-get($colores, primario);
+    }
+  }
+}
+
+/* Cards */
+.card-group {
+  margin: 60px 25px 0px 25px;
+  padding-bottom: 7rem;
+
+  & .card-img-top {
+    background-size: cover;
+    background-position: center;
+  }
+
+  & .card-title {
+    font-family: map-get($tipografias, primaria);
+    font-size: 1.1rem;
+
+    & .card-text {
+      font-size: .9rem;
+      line-height: 30px;
+    }
+  }
+}
+
+
+/* MediaQuerys */
+@media screen and (max-width: $tablet) {
+  .titulos {
+    font-size: 1.9rem;
+  }
+
+  p {
+    line-height: 32px;
+  }
+
+  .card-text,
+  .card-link {
+    font-size: .9rem;
+    line-height: 25px;
+  }
+
+  .seccion__subtitulo,
+  .card-title {
+    font-size: 1.6rem;
+  }
+
+  .linea {
+    max-width: 400px;
+  }
+}
+
+
+@media screen and (max-width: $small) {
+
+  .titulos {
+    font-size: 1.5rem;
+  }
+
+  p,
+  .card-text,
+  .card-link {
+    font-size: 1rem;
+    line-height: 25px;
+  }
+
+  .seccion__subtitulo,
+  .card-title {
+    font-size: .9rem;
+  }
+
+  .linea {
+    max-width: 275px;
+  }
+}

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* Tamaños */
 /* Mapas */
 /*Extends*/
 .contacto {
@@ -10,6 +11,14 @@
 * {
   margin: 0;
   padding: 0; }
+
+html {
+  font-size: 100%;
+  /* 100% = 16px */ }
+
+body {
+  position: relative;
+  min-height: 100vh; }
 
 /* Footer */
 footer {
@@ -26,7 +35,6 @@ footer {
       color: white;
       text-decoration: none;
       padding: 0px 15px 0px 15px;
-      font-family: Arial, Helvetica, sans-serif;
       font-size: 1rem; }
 
 /* Iconos */
@@ -43,45 +51,38 @@ footer {
   color: #c4302b; }
 
 /* Menú */
-.menubar {
-  background-color: rgba(122, 113, 151, 0.185); }
-
 .navbar-nav {
   display: flex;
   flex-direction: column;
   align-items: center; }
 
-/* Adaptación desktop */
-@media only screen and (max-width: 992px) {
-  .navbar-expand-lg .navbar-collapse {
-    display: flex !important;
-    flex-basis: auto;
-    justify-content: flex-end;
-    flex-direction: row; } }
-
 /* Contactos */
 .contacto {
+  font-family: "EB Garamond" serif;
+  background-color: #fbfafa;
   height: auto;
   padding-top: 75px;
-  padding-bottom: 100px;
+  padding-bottom: 120px;
   align-items: center;
   align-content: center;
   /* Adaptación mobile */ }
   .contacto .contacto__formulario {
+    font-weight: 600;
     font-size: 1.8rem;
     line-height: 50px; }
   .contacto .texto {
     font-size: 1.2rem;
     padding-bottom: 20px; }
-  .contacto .text, .contacto .email {
+  .contacto .text,
+  .contacto .email {
     background-color: #fbfbfb;
     width: 300px;
     height: 30px;
     border-radius: 5px;
     border-width: 1px;
-    margin-top: 10px;
-    margin-bottom: 20px; }
-    .contacto .text ::placeholder, .contacto .email ::placeholder {
+    margin-bottom: 30px; }
+    .contacto .text ::placeholder,
+    .contacto .email ::placeholder {
       font-weight: 100;
       font-size: .9rem; }
   .contacto .message {
@@ -97,12 +98,146 @@ footer {
       font-size: .9rem; }
   .contacto .button {
     height: 35px;
-    width: 300px; }
+    width: 300px;
+    background-color: #dbdce4;
+    border-color: #cbccda;
+    border-radius: 5px;
+    border-width: 1px; }
   @media only screen and (max-width: 400px) {
-    .contacto .contacto__formulario, .contacto .texto {
+    .contacto .contacto__formulario,
+    .contacto .texto {
       font-size: .9rem;
       line-height: 25px; }
-      .contacto .contacto__formulario .text, .contacto .contacto__formulario .email, .contacto .contacto__formulario .button, .contacto .contacto__formulario .message, .contacto .texto .text, .contacto .texto .email, .contacto .texto .button, .contacto .texto .message {
+      .contacto .contacto__formulario .text,
+      .contacto .contacto__formulario .email,
+      .contacto .contacto__formulario .button,
+      .contacto .contacto__formulario .message,
+      .contacto .texto .text,
+      .contacto .texto .email,
+      .contacto .texto .button,
+      .contacto .texto .message {
         width: 250px; }
     .contacto ::placeholder {
       font-size: .7rem; } }
+
+/* imagenes y video */
+.limite,
+.formas {
+  width: 500px;
+  display: block;
+  margin: auto;
+  padding-bottom: 150px;
+  margin-top: 35px;
+  transition: transform; }
+
+.limite:hover,
+.formas:hover {
+  transform: scale(1.2); }
+
+.video {
+  display: block;
+  margin: auto;
+  margin: 40px 80px 0px 80px;
+  background-size: contain;
+  padding-bottom: 7rem; }
+
+.img__bigbang {
+  width: 500px;
+  display: block;
+  margin: auto;
+  padding-bottom: 30px; }
+
+/* Comienzo del main */
+.titulo {
+  font-size: 2.5rem;
+  padding: 80px 80px 80px 80px;
+  letter-spacing: 10px;
+  animation-duration: 3s; }
+
+@media only screen and (max-width: 768px) {
+  .titulo {
+    font-size: 1.5rem;
+    padding: 0%; } }
+
+@media only screen and (max-width: 620px) {
+  .titulo {
+    font-size: 1rem; } }
+
+.titulos {
+  font-family: "EB Garamond" serif;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #000;
+  margin-top: 50px;
+  margin-bottom: 10px; }
+
+.linea {
+  border-top: 0.5px solid #000;
+  height: 40px;
+  max-width: 550px;
+  padding: 0;
+  margin: 20px auto 0px auto; }
+
+.seccion,
+p {
+  font-family: "EB Garamond" serif;
+  padding-top: 10px;
+  line-height: 35px; }
+  .seccion .container,
+  p .container {
+    padding-left: 60px;
+    padding-right: 60px; }
+    .seccion .container p,
+    p .container p {
+      font-size: 1rem;
+      padding-bottom: 20px; }
+    .seccion .container .seccion__subtitulo,
+    p .container .seccion__subtitulo {
+      font-family: "EB Garamond" serif;
+      margin-top: 35px;
+      font-size: 1.5rem;
+      color: #000; }
+
+/* Cards */
+.card-group {
+  margin: 60px 25px 0px 25px;
+  padding-bottom: 7rem; }
+  .card-group .card-img-top {
+    background-size: cover;
+    background-position: center; }
+  .card-group .card-title {
+    font-family: "EB Garamond" serif;
+    font-size: 1.1rem; }
+    .card-group .card-title .card-text {
+      font-size: .9rem;
+      line-height: 30px; }
+
+/* MediaQuerys */
+@media screen and (max-width: 768px) {
+  .titulos {
+    font-size: 1.9rem; }
+  p {
+    line-height: 32px; }
+  .card-text,
+  .card-link {
+    font-size: .9rem;
+    line-height: 25px; }
+  .seccion__subtitulo,
+  .card-title {
+    font-size: 1.6rem; }
+  .linea {
+    max-width: 400px; } }
+
+@media screen and (max-width: 480px) {
+  .titulos {
+    font-size: 1.5rem; }
+  p,
+  .card-text,
+  .card-link {
+    font-size: 1rem;
+    line-height: 25px; }
+  .seccion__subtitulo,
+  .card-title {
+    font-size: .9rem; }
+  .linea {
+    max-width: 275px; } }

@@ -1,75 +1,82 @@
 /* Contactos */
 .contacto {
-    height: auto;
-    padding-top: 75px;
-    padding-bottom: 100px;  
-    align-items: center;
-    align-content: center;  
-    @extend %flexRow;
-    
-    & .contacto__formulario {
-      font-size: 1.8rem;
-      line-height: 50px;
+  font-family: map-get($tipografias, primaria);
+  background-color: map-get($colores, bg);
+  height: auto;
+  padding-top: 75px;
+  padding-bottom: 120px;
+  align-items: center;
+  align-content: center;
+  @extend %flexRow;
+
+  & .contacto__formulario {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 50px;
   }
-    & .texto {
+
+  & .texto {
     font-size: 1.2rem;
     padding-bottom: 20px;
-  }  
-  
-    & .text, .email {
-      background-color: map-get($colores, secundario);
-      width: 300px; 
-      height: 30px; 
-      border-radius: 5px;   
-      border-width: 1px; 
-      margin-top: 10px;  
-      margin-bottom: 20px; 
+  }
 
-      &  ::placeholder {
-        font-weight: 100;
-        font-size: .9rem;
-      }
+  & .text,
+  .email {
+    background-color: map-get($colores, secundario);
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border-width: 1px;
+    margin-bottom: 30px;
+
+    & ::placeholder {
+      font-weight: 100;
+      font-size: .9rem;
     }
-  
-    & .message {
-      width: 300px; 
-      height: 80px; 
-      background-color: map-get($colores, secundario);
-      border-radius: 5px;  
-      border-width: 1px; 
-      margin-top: 10px;  
-      margin-bottom: 20px; 
+  }
 
-      &  ::placeholder {
-        font-weight: 100;
-        font-size: .9rem;
-      }
+  & .message {
+    width: 300px;
+    height: 80px;
+    background-color: map-get($colores, secundario);
+    border-radius: 5px;
+    border-width: 1px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    & ::placeholder {
+      font-weight: 100;
+      font-size: .9rem;
+    }
   }
-    
-    & .button {
-      height: 35px; 
-      width: 300px;  
+
+  & .button {
+    height: 35px;
+    width: 300px;
+    background-color: map-get($colores, button_bg);
+    border-color: map-get($colores, button_border);
+    border-radius: 5px;
+    border-width: 1px;
   }
-  
+
   /* Adaptación mobile */
   @include mediaQuery (mobile) {
-    .contacto__formulario, .texto {
+
+    .contacto__formulario,
+    .texto {
       font-size: .9rem;
-      line-height: 25px;    
-      
-      & .text, .email, .button, .message {
-      width: 250px;
+      line-height: 25px;
+
+      & .text,
+      .email,
+      .button,
+      .message {
+        width: 250px;
+      }
     }
-    }
+
     ::placeholder {
       font-size: .7rem;
     }
   }
-  }
-
-
-    
-  
-
-  
-
+}

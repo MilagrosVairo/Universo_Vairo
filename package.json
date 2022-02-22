@@ -1,7 +1,7 @@
 {
-  "name": "universo__vairo",
+  "name": "cosmos",
   "version": "1.0.0",
-  "description": "",
+  "description": "el sitio web se trata del universo y de su inicio",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
