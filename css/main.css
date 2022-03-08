@@ -7,7 +7,6 @@
   flex-direction: column;
   justify-content: center; }
 
-/*Mixins*/
 * {
   margin: 0;
   padding: 0; }
@@ -29,13 +28,15 @@ footer {
   padding: 0%;
   list-style: none;
   text-align: center; }
-  footer ul li {
-    display: inline; }
-    footer ul li a {
-      color: white;
-      text-decoration: none;
-      padding: 0px 15px 0px 15px;
-      font-size: 1rem; }
+  footer ul {
+    padding-left: 0%; }
+    footer ul li {
+      display: inline; }
+      footer ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 0px 15px 0px 15px;
+        font-size: 1rem; }
 
 /* Iconos */
 .facebook:hover {
@@ -50,11 +51,17 @@ footer {
 .youtube:hover {
   color: #c4302b; }
 
-/* Menú */
 .navbar-nav {
   display: flex;
   flex-direction: column;
   align-items: center; }
+
+@media only screen and (max-width: 992) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: flex-end;
+    flex-direction: row; } }
 
 /* Contactos */
 .contacto {
@@ -64,8 +71,7 @@ footer {
   padding-top: 75px;
   padding-bottom: 120px;
   align-items: center;
-  align-content: center;
-  /* Adaptación mobile */ }
+  align-content: center; }
   .contacto .contacto__formulario {
     font-weight: 600;
     font-size: 1.8rem;
@@ -103,22 +109,24 @@ footer {
     border-color: #cbccda;
     border-radius: 5px;
     border-width: 1px; }
-  @media only screen and (max-width: 400px) {
-    .contacto .contacto__formulario,
-    .contacto .texto {
-      font-size: .9rem;
-      line-height: 25px; }
-      .contacto .contacto__formulario .text,
-      .contacto .contacto__formulario .email,
-      .contacto .contacto__formulario .button,
-      .contacto .contacto__formulario .message,
-      .contacto .texto .text,
-      .contacto .texto .email,
-      .contacto .texto .button,
-      .contacto .texto .message {
-        width: 250px; }
-    .contacto ::placeholder {
-      font-size: .7rem; } }
+
+/* Adaptación mobile */
+@media only screen and (max-width: 400px) {
+  .contacto__formulario,
+  .texto {
+    font-size: .9rem;
+    line-height: 25px; }
+    .contacto__formulario .text,
+    .contacto__formulario .email,
+    .contacto__formulario .button,
+    .contacto__formulario .message,
+    .texto .text,
+    .texto .email,
+    .texto .button,
+    .texto .message {
+      width: 250px; }
+  ::placeholder {
+    font-size: .7rem; } }
 
 /* imagenes y video */
 .limite,
@@ -149,6 +157,7 @@ footer {
 
 /* Comienzo del main */
 .titulo {
+  font-family: "Russo One" sans-serif;
   font-size: 2.5rem;
   padding: 80px 80px 80px 80px;
   letter-spacing: 10px;
@@ -183,34 +192,37 @@ p {
   font-family: "EB Garamond" serif;
   padding-top: 10px;
   line-height: 35px; }
-  .seccion .container,
-  p .container {
-    padding-left: 60px;
-    padding-right: 60px; }
-    .seccion .container p,
-    p .container p {
-      font-size: 1rem;
-      padding-bottom: 20px; }
-    .seccion .container .seccion__subtitulo,
-    p .container .seccion__subtitulo {
-      font-family: "EB Garamond" serif;
-      margin-top: 35px;
-      font-size: 1.5rem;
-      color: #000; }
+
+.container {
+  padding-left: 60px;
+  padding-right: 60px; }
+
+.seccion__subtitulo {
+  font-family: "EB Garamond" serif;
+  margin-top: 35px;
+  font-size: 1.5rem;
+  color: #000; }
+
+p {
+  font-size: 1rem;
+  padding-bottom: 20px; }
 
 /* Cards */
 .card-group {
   margin: 60px 25px 0px 25px;
   padding-bottom: 7rem; }
-  .card-group .card-img-top {
-    background-size: cover;
-    background-position: center; }
-  .card-group .card-title {
-    font-family: "EB Garamond" serif;
-    font-size: 1.1rem; }
-    .card-group .card-title .card-text {
-      font-size: .9rem;
-      line-height: 30px; }
+
+.card-img-top {
+  background-size: cover;
+  background-position: center; }
+
+.card-title {
+  font-family: "EB Garamond" serif;
+  font-size: 1.1rem; }
+
+.card-text {
+  font-size: .9rem;
+  line-height: 30px; }
 
 /* MediaQuerys */
 @media screen and (max-width: 768px) {
@@ -238,6 +250,6 @@ p {
     line-height: 25px; }
   .seccion__subtitulo,
   .card-title {
-    font-size: .9rem; }
+    font-size: 1.2rem; }
   .linea {
     max-width: 275px; } }

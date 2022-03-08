@@ -20,44 +20,45 @@ p {
   font-family: map-get($tipografias, primaria);
   padding-top: 10px;
   line-height: 35px;
-
-  .container {
-    padding-left: 60px;
-    padding-right: 60px;
-
-    p {
-      font-size: 1rem;
-      padding-bottom: 20px;
-    }
-
-    .seccion__subtitulo {
-      font-family: map-get($tipografias, primaria);
-      margin-top: 35px;
-      font-size: 1.5rem;
-      color: map-get($colores, primario);
-    }
-  }
 }
+
+.container {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.seccion__subtitulo {
+  font-family: map-get($tipografias, primaria);
+  margin-top: 35px;
+  font-size: 1.5rem;
+  color: map-get($colores, primario);
+}
+
+p {
+  font-size: 1rem;
+  padding-bottom: 20px;
+}
+
 
 /* Cards */
 .card-group {
   margin: 60px 25px 0px 25px;
   padding-bottom: 7rem;
+}
 
-  & .card-img-top {
-    background-size: cover;
-    background-position: center;
-  }
+.card-img-top {
+  background-size: cover;
+  background-position: center;
+}
 
-  & .card-title {
-    font-family: map-get($tipografias, primaria);
-    font-size: 1.1rem;
+.card-title {
+  font-family: map-get($tipografias, primaria);
+  font-size: 1.1rem;
+}
 
-    & .card-text {
-      font-size: .9rem;
-      line-height: 30px;
-    }
-  }
+.card-text {
+  font-size: .9rem;
+  line-height: 30px;
 }
 
 
@@ -89,7 +90,6 @@ p {
 
 
 @media screen and (max-width: $small) {
-
   .titulos {
     font-size: 1.5rem;
   }
@@ -103,7 +103,7 @@ p {
 
   .seccion__subtitulo,
   .card-title {
-    font-size: .9rem;
+    font-size: 1.2rem;
   }
 
   .linea {

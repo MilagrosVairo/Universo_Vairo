@@ -54,7 +54,6 @@ body {
 }
 
 
-
 /* Comienzo del section */
 .titulos {
   font-family: 'EB Garamond', serif;
@@ -158,14 +157,13 @@ p {
 
   .seccion__subtitulo,
   .card-title {
-    font-size: .9rem;
+    font-size: 1.2rem;
   }
 
   .linea {
     max-width: 275px;
   }
 }
-
 
 
 /* Comienzo del footer */
@@ -209,7 +207,6 @@ ul li a {
 .youtube:hover {
   color: #c4302b;
 }
-
 
 
 /* Contactos */
@@ -290,7 +287,6 @@ ul li a {
     width: 250px;
   }
 }
-
 
 
 /* imagenes y video */

@@ -1,9 +1,17 @@
 /* Tamaños */
+$mobile: 400px;
 $small: 480px;
 $intermedio: 620px;
+$medio: 992;
 $tablet: 768px; 
 
+
 /* Mapas */
+$tipografias: (
+    primaria:'EB Garamond' serif,
+    secundaria: 'Russo One' sans-serif,
+);
+
 $colores: (
     primario: #000,
     secundario: #fbfbfb,
@@ -13,10 +21,6 @@ $colores: (
     button_border: #cbccda,
 );
 
-$tipografias: (
-    primaria:'EB Garamond' serif,
-    secundaria: 'Russo One' sans-serif,
-);
 
 /*Extends*/
 %flexRow {
@@ -26,15 +30,3 @@ $tipografias: (
 };
 
 
-/*Mixins*/
-@mixin mediaQuery ($diseñoPantalla) {
-    @if $diseñoPantalla == mobile {
-        @media only screen and (max-width: 400px) {
-            @content;
-        } 
-    } @else if $diseñoPantalla == medio {
-        @media only screen and (max-width: 992px) {
-            @content;
-        } 
-    }
-};

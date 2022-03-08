@@ -58,25 +58,25 @@
     border-radius: 5px;
     border-width: 1px;
   }
+}
 
-  /* Adaptación mobile */
-  @include mediaQuery (mobile) {
+/* Adaptación mobile */
+@media only screen and (max-width: $mobile) {
 
-    .contacto__formulario,
-    .texto {
-      font-size: .9rem;
-      line-height: 25px;
+  .contacto__formulario,
+  .texto {
+    font-size: .9rem;
+    line-height: 25px;
 
-      & .text,
-      .email,
-      .button,
-      .message {
-        width: 250px;
-      }
+    & .text,
+    .email,
+    .button,
+    .message {
+      width: 250px;
     }
+  }
 
-    ::placeholder {
-      font-size: .7rem;
-    }
+  ::placeholder {
+    font-size: .7rem;
   }
 }
